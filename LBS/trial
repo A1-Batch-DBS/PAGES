@@ -1,0 +1,71 @@
+<div class="card-body">
+    <form class="form" method="POST" action="/search_book"><br> 
+         <label>Book name</label><br>
+         <input type="text" class="form-control" name="bookname"><br>
+        
+         <input type="submit" class="btn btn-primary btn-block btn-lg" value="search">
+     </form> 
+ </div>
+
+
+
+<!--
+   {% if mybook[0]==null %}
+   <h1>Book Not found</h1>
+   {% endif %}
+
+   {% if mybook[5] %}
+    
+   <div class="container mt-10" >
+   <div class="card-body">
+       <div class="card container">
+       <form class="form" method="POST"><br> 
+            <label>Book name</label><br>
+            <input type="text" value= "{{mybook[2]}}" class="form-control" name="bookname"><br>
+            <label>ISBN</label><br>
+            <input type="text" value= "{{mybook[1]}}" class="form-control" name="isbn"><br>
+            <label>COPIES</label><br>
+            <input type="text" value= "{{mybook[3]}}" class="form-control" name="copies"><br>
+            <label>Shelf</label><br>
+            <input type="text" value= "{{mybook[4]}}" class="form-control" name="shelf"><br>
+            <b><input style="color: green;" type="text" value= "Available" class="form-control" name="availability"><br></b>
+
+  
+            <input type="submit" class="btn btn-primary btn-block btn-lg" value="issue">
+            <input type="submit" class="btn btn-primary btn-block btn-lg" value="return">
+           </div>
+        </form> 
+    </div>
+   </div>
+
+  
+   {% elif mybook[5]==0 %}
+
+   <h1>Book not available at the moment</h1>
+   <div class="container mt-10" >
+    <div class="card-body">
+        <div class="card container">
+        <form class="form" method="POST"><br> 
+             <label>Book name</label><br>
+             <input type="text" value= "{{mybook[2]}}" class="form-control" name="bookname"><br>
+             <label>ISBN</label><br>
+             <input type="text" value= "{{mybook[1]}}" class="form-control" name="isbn"><br>
+             <label>COPIES</label><br>
+             <input type="text" value= "{{mybook[3]}}" class="form-control" name="copies"><br>
+             <label>Shelf</label><br>
+             <input type="text" value= "{{mybook[4]}}" class="form-control" name="shelf"><br>
+             <b><input style="color: red;" type="text" value= "Not Available" class="form-control" name="availability"><br></b>
+ 
+   
+             <input type="submit" class="btn btn-primary btn-block btn-lg" value="return">
+            </div>
+         </form> 
+     </div>
+    </div>
+  {% else %}
+
+    <h1>Sorry, recheck value or Book not available in the library</h1>
+
+   {% endif %} 
+  -->
+   
